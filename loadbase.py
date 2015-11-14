@@ -13,7 +13,7 @@ store = pd.HDFStore('db.h5', 'r')
 sacredata = store['sacredata']
 
 # Get movement series
-move_series = sacredata.loc[:, 'Movement']
+move_series = sacredata.loc[:, 'red']
 t = move_series.index.tolist()
 y = move_series.values
 

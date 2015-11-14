@@ -12,7 +12,7 @@ from datetime import datetime
 s1 = pd.Series()
 s2 = pd.Series()
 
-for it in range(5):
+for it in range(20):
     now = pd.to_datetime(datetime.now())
     olds = pd.Series(it*3,  index = [now])
     news = pd.Series(it**2, index = [now])
